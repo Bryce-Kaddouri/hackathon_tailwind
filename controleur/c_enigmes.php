@@ -110,6 +110,33 @@ switch ($action) {
                 }
             }
         }
+        case 'score':{
+            $numSession = 1;
+            $infoDateSession = $pdo->getInfoDateSession($numSession);
+            $dateNow = $infoDateSession['dateNow'];
+            $dateDebut = $infoDateSession['dateDebut'];
+            $dateFin = $infoDateSession['dateFin'];
+    
+            $timerDebut = $pdo->getTimer($dateNow, $dateDebut);
+            $timerFin = $pdo->getTimer($dateNow, $dateFin);
+
+            if ($timerDebut > 0){
+                include("vues/v_beforeStart.php");
+                break;
+            } else {
+                if ($timerFin < 0) {
+                        include("vues/v_endPage.php");
+                        break;
+                    } else {
+
+                        include("vues/v_profile.php");
+
+                    $timer = $timerFin;
+                        include("vues/v_score.php");
+                    break;
+                }
+            }
+        }
 
     default: {
             include("vues/v_connexion.php");

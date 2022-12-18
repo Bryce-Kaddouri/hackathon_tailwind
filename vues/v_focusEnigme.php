@@ -76,7 +76,7 @@
                                             success: function(data) {
                                                 swal.fire({
                                                     text: 'Vous avez gagné ' + data + ' points',
-                                                    html: '<img src="images/trophyWin.GIF" alt="gif" width="80%" height="90%">',
+                                                    html: '<img src="images/gif/trophyWin.GIF" alt="gif" width="100%" height="90%">',
                                                     confirmButtonText: 'OK',
                                                     background: '#6766A9',
                                                     timer: 5000

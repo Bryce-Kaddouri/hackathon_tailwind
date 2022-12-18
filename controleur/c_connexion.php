@@ -23,7 +23,6 @@ switch ($action) {
             }
             $equipe = $pdo->getInfosEquipe($login, $mdp);
             if (!is_array($equipe)) {
-                // header('Location: login.html');
                 include("vues/v_connexion.php");
 
                 break;
@@ -31,7 +30,6 @@ switch ($action) {
                 $id = $equipe['equipeID'];
                 $nom = $equipe['login'];
                 connecter($id, $nom);
-                // $_SESSION['idPartie'] = 1;
                 header('Location: index.php?uc=enigme&action=afficherEnigmes');
                 break;
             }

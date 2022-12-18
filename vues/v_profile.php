@@ -12,7 +12,9 @@
         </div>
         <div class="w-2/6  h-full flex">
             <div class="w-auto mx-auto flex">
-            <button class="bg-white rounded-md w-14 h-16 hover:bg-green-500 hover:text-white font-semibold shadow-lg h-12 m-1 sm:mt-3 sm:mt-3 sm:mb-3" ><img class="p-2" src="images/icon/tabScore_icon.png" alt=""></button>
+                <a href="index.php?uc=enigme&action=score">
+            <button class="bg-white rounded-md w-14 h-16 hover:bg-green-500 hover:text-white font-semibold shadow-lg h-12 m-1 sm:mt-3 sm:mt-3 sm:mb-3" ><img class="p-2" src="images/icon/tabScore_icon.png" alt=""></button>    
+            </a>
             <button class="hidden md:block lg:block xl:block bg-white rounded-md w-14  h-14 hover:bg-green-500 hover:text-white font-semibold shadow-lg h-12 m-1 sm:m-3 sm:m-3 sm:m-3" >test</button>
             <button class="bg-white rounded-md w-14  h-14 hover:bg-green-500 hover:text-white font-semibold shadow-lg h-12 mt-1 mb-1 mr-1 sm:mt-3 sm:mb-3 sm:mr-3" ><img class="mx-auto" src="images/icon/powerOff_icon.png" alt=""></button>
             </div>
